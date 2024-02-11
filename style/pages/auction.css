@@ -1,0 +1,184 @@
+* {
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    color: #0984e3;
+    font-family: "Montserrat-Regular";
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#new-bet input {
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: block;
+    border: 1px solid #303030;
+    width: 100%;
+    padding: 12px 7px;
+    font-size: 16px;
+    color: #303030;
+    font-family: "Montserrat-Regular";
+    width: 120px;
+}
+
+#new-bet button {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 1rem;
+    font-size: 16px;
+    color: white;
+    background: #00b894;
+    font-family: "Montserrat-Bold";
+    width: 120px;
+}
+
+#author,
+#user_how_create_prev_bet {
+    color: black !important;
+}
+
+#about_auction {
+    max-width: 720px;
+}
+
+#cp-panel {
+    margin-top: 25px;
+    display: none;
+}
+
+#cp-panel #flex-element {
+    display: flex;
+    justify-content: center;
+}
+
+
+#cp-panel button {
+    font-size: 16px;
+    padding: 12px 24px;
+    font-family: "Montserrat-Regular";
+    color: white;
+    background: #0984e3;
+}
+
+#cp-panel button {
+    margin: 0 12.5px;
+}
+
+#delete {
+    background: #d63031 !important;
+}
+
+#comment {
+    display: block;
+    border: 1px solid #303030;
+    padding: 25px;
+    margin-top: 25px;
+    max-height: 250px;
+    overflow: auto;
+}
+
+#author-comment {
+    font-size: 18px;
+    font-family: "Montserrat-Bold";
+}
+
+#data-comment {
+    color: gray;
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+}
+
+#comment #text {
+    margin-top: 1rem;
+}
+
+#comment p,
+#comment div {
+    text-align: left !important;
+}
+
+#new_comment {
+    font-family: "Montserrat-Regular";
+    padding: 12px;
+    text-align: left;
+    resize: none;
+    width: 100%;
+    border: 1px solid #303030;
+    margin-top: 25px;
+    height: 250px;
+}
+
+#add_comment {
+    padding: 12px 24px;
+    color: white;
+    background: #00cec9;
+    font-family: "Montserrat-Regular";
+    width: 100% !important;
+}
+
+#dialog-content {
+    background: #08426f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    padding: 25px;
+    width: 720px;
+    border-radius: 15px;
+}
+
+#dialog-window {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.331);
+    top: 0;
+}
+
+#title-dialog-window {
+    font-size: 24px;
+    font-family: "Montserrat-Bold";
+    color: white;
+}
+
+#dialog-content textarea {
+    margin-top: 1rem;
+    display: block;
+    border: 1px solid #303030;
+    width: 100%;
+    padding: 12px 7px;
+    font-size: 16px;
+    color: #303030;
+    font-family: "Montserrat-Regular";
+    height: 150px;
+}
+
+#dialog-content button {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 1rem;
+    font-size: 16px;
+    color: white;
+    background: #00b894;
+    font-family: "Montserrat-Bold";
+    width: 120px;
+}
+
+#dialog-content button:last-child{
+    background: #d63031;
+}
+
+#photo img{
+    height: 250px;
+}

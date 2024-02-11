@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Огляд лоту | AUCTION</title>
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/reset-style.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/pages/login.css">
+    <script src="/js/func/jQuery.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container flex-element">
+            <a href="/" id="title">AUCTION - ONLINE </a>
+            <div id="navbar">
+                <a href="/pages/all-auction.html">УСІ АУКЦІОНИ</a>
+                <a href="/pages/activity-auction.html">АКТИВНІ АУКЦІОНИ</a>
+                <a href="/pages/history-auction.html">ІСТОРІЯ АУКЦІОНІВ</a>
+                <a href="/pages/auth.html" id='main_button'>УВІЙТИ</a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div id="cp-panel">
+            <div id="flex-element">
+                <button id='delete' onclick="deleteAuction()">Видалити аукціон</button>
+                <button onclick="openDialog('about')">Змінити опис</button>
+                <button onclick="openDialog('date')">Змінити дату закінчення аукціону</button>
+                <button onclick="deactiveAuction()">Деактивувати аукціон</button>
+            </div>
+        </div>
+    </div>
+    <div id="default-hr"></div>
+
+    <div class="container" id='about_auction'>
+        <div id="title-block">
+            Огляд лоту №<span id='number_lot'></span>
+        </div>
+
+        <p id='text'>Cтатус <span id="status_lot"></span></p>
+
+        <div id="photo">
+            <img src="https://media.istockphoto.com/id/1392182937/vector/no-image-available-photo-coming-soon.jpg?s=612x612&w=0&k=20&c=3vGh4yj0O2b4tPtjpK-q-Qg0wGHsjseL2HT-pIyJiuc=" alt="photo">
+        </div>
+
+        <p id="text">-> Назва лоту: <span id='name_lot'></span></p>
+        <p id='author'></p>
+        <p id="text">-> Опис лоту: <span id='AboutAuction'></span></p>
+        <p id="text">-> Теперішня ставка: <span id='tmp_bet'></span></p>
+        <p id="text">-> Попередня ставка: <span id='prev_bet'></span></p>
+        <p id="user_how_create_prev_bet"></p>
+        <p id="text">-> Дата створення: <span id='date_create'></span></p>
+        <p id="text">-> Дата закінчення: <span id='date_end'></span></p>
+
+        <div id="new-bet">
+            <p id="text">Повисити ставку</p>
+            <input type="text" placeholder="1000 (в у.о)" id="new-bet_">
+            <button id="new_bet" onclick="new_bet()">
+                Повисити
+            </button>
+        </div>
+
+        <div id="default-hr"></div>
+
+        <div id="title-block">Коментарі</div>
+
+        <textarea id="new_comment" placeholder="Повідомлення..."></textarea>
+        <button id='add_comment' onclick="addComent()">Додати коментар</button>
+
+        <div id="div-block-comments">
+            <div id="comment"></div>
+        </div>
+    </div>
+</body>
+
+<div id="dialog-window">
+    <div id="dialog-content">
+        <div id="title-dialog-window">
+            Зміна даних
+        </div>
+        <textarea placeholder="Мають бути оновленні дані" id = "new_content"></textarea>
+
+        <button id = 'change'> Змінити</button>
+        <button onclick = "closeDialog()">Відміна</button>
+    </div>
+</div>
+<script src="/js/func/auctions/check-auction.js"></script>
+<script src="/js/func/auctions/comments.js"></script>
+<link rel="stylesheet" href="/style/pages/auction.css">
+
+<script src="/js/check-auth.js"></script>
+
+</html>

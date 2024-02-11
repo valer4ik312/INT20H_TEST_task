@@ -1,0 +1,76 @@
+#hello_block{
+    background: url(/image/фон\ для\ hello\ block.svg);
+    background-size: 100%;
+    background-position: center;
+}
+
+#hello_block #text{
+    color: white;
+    max-width: 502px;
+    margin-top: 50px;
+}
+
+#hello_block #title{
+    display: inline-block;
+    margin-top: 250px;
+    transform: translate(0, -50%);
+}
+
+#hello_block .flex-element{
+    margin-top: 200px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+#hello_block .flex-element img{
+    display: block;
+    height: 24px;
+}
+
+#hello_block .flex-element a{
+    font-size: 32px;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.35);
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    font-family: "Montserrat-Regular";
+}
+
+#about-us #info{
+    margin-top: 1rem;
+}
+
+#about-us #info #text span{
+    display: block;
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+#info{
+    flex: 0 0 50%;
+    padding-right: 3rem;
+    padding-bottom: 50px;
+}
+
+#photo1{
+    flex: 0 0 50%;
+    background: url(/image/john-schnobrich-2FPjlAyMQTA-unsplash\ 1.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+#slogan{
+    margin-top: 50px;
+    background: #10203a;
+}
+
+#slogan p{
+    padding: 22px 0;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    font-family: "Montserrat-Bold";
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Створення аукціону | Auction</title>
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/reset-style.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/create-auction.css">
+    <script src="/js/func/jQuery.js"></script>
+</head>
+<body>
+    <div id="create-auction-block">
+        <div id="title-block">
+            Створення аукціону
+        </div>
+        <p id="text">Автор: <span id = 'author_auction'></span></p>
+        <p id = 'text'>Назва лоту <span>*</span></p>
+        <input type="text" placeholder="Автомобіль" id = "name_auction" required>
+        <p id = 'text'>Стартова ціна <span>*</span></p>
+        <input type="text" placeholder="1000 (в у.о.)" id = "start_bet" required>
+        <p id = 'text'>Опис лоту <span>*</span></p>
+        <textarea id = 'about_auction' placeholder="Тут має бути опис"></textarea>
+        <p id = 'text'>Дата закінчення <span>*</span></p>
+        <input type="text" placeholder="2024-02-11" id = "date_end_auction" required>
+        <button onclick="create_aunction()">Cтворити лот</button>
+    </div>
+</body>
+<script src="/js/func/create_auction.js"></script>
+<script src="/js/check-auth.js"></script>
+</html>

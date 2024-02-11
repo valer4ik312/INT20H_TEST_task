@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АКТИВНІ АУКЦІОНИ | AUCTION</title>
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/reset-style.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/pages/login.css">
+    <script src="/js/func/jQuery.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container flex-element">
+            <a href="/" id="title">AUCTION - ONLINE </a>
+            <div id="navbar">
+                <a href="/pages/all-auction.html">УСІ АУКЦІОНИ</a>
+                <a href="/pages/activity-auction.html">АКТИВНІ АУКЦІОНИ</a>
+                <a href="/pages/history-auction.html">ІСТОРІЯ АУКЦІОНІВ</a>
+                <a href="/pages/auth.html" id='main_button'>УВІЙТИ</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="default-hr"></div>
+    <div id="auctions" class="container">
+        <div id="title-block">АКТИВНІ АУКЦІОНИ</div>
+        <table class="table" id = 'full-table'>
+            <thead>
+                <tr>
+                    <th>№ лоту</th>
+                    <th>Назва лоту</th>
+                    <th>Теперішня ставка</th>
+                    <th>Авто лоту</th>
+                    <th>Статус</th>
+                    <th>Функції</th>
+                </tr>
+            </thead>
+            <tbody id = 'table_body'>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+    <script src="/js/func/auctions/active-auctions.js"></script>
+<script src="/js/check-auth.js"></script>
+</html>
